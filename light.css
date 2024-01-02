@@ -34,6 +34,12 @@ header{
 .screen
 {
     background-color: var(--Very-light-gray-screen-background);
+    color: red;
+}
+
+#screen-content
+{
+    color: black;
 }
 
 .keys-container

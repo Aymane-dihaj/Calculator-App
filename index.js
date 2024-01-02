@@ -7,7 +7,6 @@ const toggleButtons = document.getElementsByClassName("button")
 const styleElement = document.getElementById("style-el")
 let arr = [...toggleButtons]
 
-let currentTheme = localStorage.getItem("theme") || "default";
 
 
 
@@ -20,7 +19,6 @@ const btnAnimationTiming = {
 }
 
 
-screenContent.style.color = "white"
 
 let disabled = false
 let count = 0
@@ -107,15 +105,9 @@ arr.forEach((element, index) => {
     {
         element.style.opacity = "1";
         if (index === 0)
-        {
             styleElement.setAttribute("href", "index.css");
-            localStorage.setItem('theme', "default")
-        }
         if (index === 1)
-        {
             styleElement.setAttribute("href", "light.css")
-            localStorage.setItem('theme', "light")
-        }
         arr.filter (function (item){
             return item != element
         })
@@ -125,4 +117,3 @@ arr.forEach((element, index) => {
     })
 })
 
-onload

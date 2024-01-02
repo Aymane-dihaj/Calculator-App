@@ -197,10 +197,10 @@ header p
 
 .toggle-btn
 {
-    width: 50px;
+    width: 40px;
     height: 18px;
     display: flex;
-    justify-content: center;
+    padding: 5px;
     align-items: center;
     border: 3px solid balck;
     border-radius: 50px;
